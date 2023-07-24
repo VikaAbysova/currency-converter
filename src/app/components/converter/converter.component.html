@@ -1,0 +1,50 @@
+<div>
+  <input
+    min="0"
+    tabindex="0"
+    class="currency amount"
+    type="number"
+    id="firstCurrencyName"
+    name="firstCurrencyName"
+    [(ngModel)]="currencyConverter.firstCurrency.firstCurrencyAmount"
+    (input)="onChange($event)"
+  />
+  <select
+    tabindex="0"
+    class="currency select"
+    name="firstCurrencyName"
+    id="firstCurrencyName"
+    [(ngModel)]="currencyConverter.firstCurrency.firstCurrencyName"
+    (change)="onChange($event)"
+  >
+    <option *ngFor="let option of options" [value]="option.value">
+      {{ option.name }}
+    </option>
+  </select>
+</div>
+<div>
+</div>
+<div>
+  <input
+    min="0"
+    tabindex="0"
+    class="currency amount"
+    type="number"
+    id="secondCurrencyName"
+    name="secondCurrencyName"
+    [(ngModel)]="currencyConverter.secondCurrency.secondCurrencyAmount"
+    (input)="onChange($event)"
+  />
+  <select
+    tabindex="0"
+    class="currency select"
+    name="secondCurrencyName"
+    id="secondCurrencyName"
+    [(ngModel)]="currencyConverter.secondCurrency.secondCurrencyName"
+    (change)="onChange($event)"
+  >
+    <option *ngFor="let option of options" [value]="option.value">
+      {{ option.name }}
+    </option>
+  </select>
+</div>

@@ -1,0 +1,12 @@
+@import '/src/styles/variables';
+.app {
+  border: 1px solid transparent;
+  background-color: rgb(189, 213, 236);
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: fit-content;
+  color: $primary-color;
+  box-shadow: $primary-box-shadow;
+}

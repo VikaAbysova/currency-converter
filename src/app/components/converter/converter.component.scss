@@ -1,0 +1,14 @@
+@import "/src/styles/variables";
+.currency {
+  padding: 0.3rem;
+  border-radius: $primary-border-radius;
+  border: $primary-border;
+  margin: 0.2rem;
+  background-color: whitesmoke;
+}
+.currency:focus {
+  outline: none;
+  box-shadow: $primary-box-shadow;
+}
+
+
